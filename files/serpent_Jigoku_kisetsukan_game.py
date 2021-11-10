@@ -25,13 +25,6 @@ class SerpentJigoku_kisetsukanGame(Game, metaclass=Singleton):
         
         self.frame_transformation_pipeline_string = "RESIZE:100x100|GRAYSCALE"
         
-        
-        self.frame_width = 100
-        self.frame_height = 100
-        self.frame_channels = 0
-        
-        self.environments = dict()
-        self.environment_data = dict()
 
     @property
     def screen_regions(self):
@@ -47,11 +40,11 @@ class SerpentJigoku_kisetsukanGame(Game, metaclass=Singleton):
 
         '''Fullscreen regions
         regions = {
-            "Lifes": (862, 208, 883, 471), #Y, X, Y, X
-            "Power": (935, 404, 968, 486),
-            "Aura": (1015, 208, 1033, 478),
-            "Multiplier_score": (939, 1641, 958, 1708),
-            "Score": (1012, 1523, 1035, 1714)
+            "Lifes": (849, 400, 904, 498), #Y, X, Y, X
+            "Power": (923, 405, 978, 503),
+            "Aura": (1001, 400, 1045, 497),
+            "Multiplier_score": (933, 1536, 978, 1723),
+            "Score": (1008, 1429, 1046, 1723)
         }'''
 
         return regions
